@@ -2,7 +2,6 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from "../components/HomeScreen"
 import TransactionScreen from "../components/TransactionScreen"
-import ChatScreen from "../components/ChatScreen"
 import CheckoutScreen from "../components/CheckoutScreen"
 import ProfileScreen from "../components/ProfileScreen"
 
@@ -10,6 +9,9 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 
 const Tab = createBottomTabNavigator();
+
+import Icon from 'react-native-vector-icons/FontAwesome';
+const myIcon = (<Icon name="rocket" size={30} color="#900" />)
 
 export default class Tabs extends React.Component {
     render(){
@@ -21,7 +23,7 @@ export default class Tabs extends React.Component {
                 options={{
                   tabBarLabel: 'Home',
                   tabBarIcon: ({ color, size }) => (
-                    <MaterialCommunityIcons name="account" color={color} size={size} />
+                    <MaterialCommunityIcons name="home" color={color} size={size} />
                   ),
                 }}
               />
@@ -36,23 +38,13 @@ export default class Tabs extends React.Component {
                   tabBarBadge: 3,
                 }}
               />
-              <Tab.Screen
-                name="chat"
-                component={ChatScreen}
-                options={{
-                  tabBarLabel: 'Chat',
-                  tabBarIcon: ({ color, size }) => (
-                    <MaterialCommunityIcons name="bell" color={color} size={size} />
-                  ),
-                }}
-              />
              <Tab.Screen
                 name="checkout"
                 component={CheckoutScreen}
                 options={{
                   tabBarLabel: 'Checkout',
                   tabBarIcon: ({ color, size }) => (
-                    <MaterialCommunityIcons name="bell" color={color} size={size} />
+                    <MaterialCommunityIcons name="inbox" color={color} size={size} />
                   ),
                 }}
               />
@@ -62,7 +54,7 @@ export default class Tabs extends React.Component {
                 options={{
                   tabBarLabel: 'Profile',
                   tabBarIcon: ({ color, size }) => (
-                    <MaterialCommunityIcons name="bell" color={color} size={size} />
+                    <MaterialCommunityIcons name="account" color={color} size={size} />
                   ),
                 }}
               />
