@@ -1,0 +1,3 @@
+[2020-10-12 12:22:46.191] [sharedprocess] [info] main {"machineId":"63175221143fd36afdddd7adeb35fc43adff079755f2d6551dc36febfb487094","windowId":2}
+[2020-10-12 12:22:46.311] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/manpreetsinghgugga/Desktop/ReactNativeGitExamples/bottomnavexample/User/snippets'
+[2020-10-12 12:23:26.213] [sharedprocess] [info] Starting to clean up unused language packs.

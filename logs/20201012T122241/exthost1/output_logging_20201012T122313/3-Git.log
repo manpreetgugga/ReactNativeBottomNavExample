@@ -1,0 +1,16 @@
+Looking for git in: git
+Using git 2.26.0 from git
+> git rev-parse --git-dir
+Open repository: /home/manpreetsinghgugga/Desktop/ReactNativeGitExamples/bottomnavexample
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :components/Tabs.js
+> git ls-files --stage -- /home/manpreetsinghgugga/Desktop/ReactNativeGitExamples/bottomnavexample/components/Tabs.js
+> git check-ignore -v -z --stdin
